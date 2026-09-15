@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISAC Conecta · Design System 2.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="reading-bar" id="readingBar"></div>
+<div class="page">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <div class="brand-mark">IC</div>
+        <div>
+          <div class="brand-name">ISAC Conecta</div>
+          <div class="brand-sub">Design System — versão 2.0 · proposta para validação</div>
+        </div>
+      </div>
+      <a href="index.html" style="align-self:center;color:#fff;font-size:14px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);padding:7px 14px;border-radius:999px;backdrop-filter:blur(4px)">&larr; Menu</a>
+        <div class="chips-head">
+        <span class="chip-head">Mobile-first</span>
+        <span class="chip-head">WCAG AA</span>
+        <span class="chip-head">Base 4px</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== INTRO ===================== -->
+    <section class="reveal">
+      <div class="eyebrow">Direção</div>
+      <h2 class="h-display" style="max-width:20ch">Praia, mata e vizinhança — em forma de produto.</h2>
+      <p class="lead mt-16">O sistema parte da identidade do ISAC: azul-petróleo do mar, oliva da vegetação, coral da orla. Superfícies claras e muito respiro; tipografia grande e de alta legibilidade; cantos suaves; nenhum elemento decorativo que não ajude a entender a tela. Tudo dimensionado primeiro para o celular na mão de quem nunca usou um app de anúncios.</p>
+      <div class="grid g-220 mt-28 reveal-stagger">
+        <div class="card hover-lift principle">
+          <div class="card-title">Linguagem do bairro</div>
+          <p class="card-body">“Publicar anúncio”, não “criar listing”. Rótulos curtos, verbos no infinitivo.</p>
+        </div>
+        <div class="card hover-lift principle">
+          <div class="card-title">Estado sempre visível</div>
+          <p class="card-body">A IA mostra o que entendeu, em etapas, com rótulo de progresso e possibilidade de corrigir.</p>
+        </div>
+        <div class="card hover-lift principle">
+          <div class="card-title">Reconhecer, não lembrar</div>
+          <p class="card-body">Categorias com ícone e cor fixas, repetidas em todas as telas. Nada depende de memória.</p>
+        </div>
+        <div class="card hover-lift principle">
+          <div class="card-title">Erro difícil de cometer</div>
+          <p class="card-body">Campos com exemplo, confirmação antes de publicar, desfazer em vez de alerta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CORES ===================== -->
+    <section class="reveal">
+      <div class="eyebrow">01 · Cores</div>
+      <h2 class="h-section">Paleta por função</h2>
+      <p class="lead muted mt-10" style="max-width:60ch">Cada cor tem um único trabalho. Oliva é sempre ação; coral é sempre destaque editorial e nunca botão primário; petróleo é marca e estrutura.</p>
+
+      <h3 class="h-micro mt-32" style="margin-bottom:12px">Marca &amp; estrutura</h3>
+      <div class="grid g-240 reveal-stagger">
+        <div class="swatch">
+          <div class="swatch-fill" style="background:#4A7C8A;color:#fff">Texto branco 4,69:1 AA</div>
+          <div class="swatch-meta"><div class="swatch-name">Petróleo</div><div class="swatch-token">--isac-primary · #4A7C8A</div><div class="swatch-use">Cabeçalhos, barra de navegação, ícones de marca.</div></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-fill" style="background:#3D6A76;color:#fff">Texto branco 6,02:1 AA</div>
+          <div class="swatch-meta"><div class="swatch-name">Petróleo escuro</div><div class="swatch-token">--isac-primary-dark · #3D6A76</div><div class="swatch-use">Títulos, hover do petróleo, fundos de topo.</div></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-fill" style="background:#1F3A42;color:#fff">Texto branco 12,1:1 AAA</div>
+          <div class="swatch-meta"><div class="swatch-name">Petróleo tinta</div><div class="swatch-token">--isac-ink · #1F3A42</div><div class="swatch-use">Texto corrido. Derivado do petróleo, não é preto puro.</div></div>
+        </div>
+      </div>
+
+      <h3 class="h-micro mt-32" style="margin-bottom:12px">Ação &amp; destaque</h3>
+      <div class="grid g-240 reveal-stagger">
+        <div class="swatch">
+          <div class="swatch-fill" style="background:#B5C24E;color:#1F3A42;font-weight:700">Tinta escura 6,28:1 AA</div>
+          <div class="swatch-meta"><div class="swatch-name">Oliva</div><div class="swatch-token">--isac-action · #B5C24E</div><div class="swatch-use">Botão primário, ícone de sucesso. Sempre com texto escuro.</div></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-fill" style="background:#6E7826;color:#fff">Texto branco 4,86:1 AA</div>
+          <div class="swatch-meta"><div class="swatch-name">Oliva profundo</div><div class="swatch-token">--isac-action-deep · #6E7826</div><div class="swatch-use">Tom criado para hover/pressionado e para oliva com texto branco.</div></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-fill" style="background:#E8946A;color:#1F3A42;font-weight:700">Tinta escura 5,13:1 AA</div>
+          <div class="swatch-meta"><div class="swatch-name">Coral</div><div class="swatch-token">--isac-accent · #E8946A</div><div class="swatch-use">Etiquetas “novo”, chamadas, destaque de urgência. Nunca botão primário.</div></div>
+        </div>
+      </div>
+
+      <h3 class="h-micro mt-32" style="margin-bottom:12px">Superfícies</h3>
+      <div class="grid g-200 reveal-stagger">
+        <div class="swatch"><div class="swatch-fill" style="background:#fff;height:88px;border-bottom:1px solid var(--isac-border-soft)"></div><div class="swatch-meta"><div class="swatch-name">Branco</div><div class="swatch-token">--isac-surface · #FFFFFF</div><div class="swatch-use">Cards e campos.</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background:#FAFAF2;height:88px;border-bottom:1px solid var(--isac-border-soft)"></div><div class="swatch-meta"><div class="swatch-name">Areia</div><div class="swatch-token">--isac-bg · #FAFAF2</div><div class="swatch-use">Fundo padrão das telas.</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background:#F0F2C8;height:88px;border-bottom:1px solid var(--isac-border-soft)"></div><div class="swatch-meta"><div class="swatch-name">Creme</div><div class="swatch-token">--isac-surface-warm · #F0F2C8</div><div class="swatch-use">Áreas de respiro, blocos informativos da IA.</div></div></div>
+        <div class="swatch"><div class="swatch-fill" style="background:#D4DCC8;height:88px;border-bottom:1px solid var(--isac-border-soft)"></div><div class="swatch-meta"><div class="swatch-name">Sálvia</div><div class="swatch-token">--isac-surface-alt · #D4DCC8</div><div class="swatch-use">Superfície secundária, bordas, divisores.</div></div></div>
+      </div>
+
+      <h3 class="h-micro mt-32" style="margin-bottom:12px">Texto &amp; estados</h3>
+      <div class="grid g-200 reveal-stagger">
+        <div class="card">
+          <div style="font-size:20px;font-weight:600;color:var(--isac-ink)">Texto principal</div>
+          <div style="font-size:14px;color:var(--isac-ink-muted);margin-top:4px">--isac-ink · #1F3A42 · 10,5:1 no creme</div>
+          <div style="font-size:20px;font-weight:600;color:var(--isac-ink-muted);margin-top:14px">Texto secundário</div>
+          <div style="font-size:14px;color:var(--isac-ink-muted);margin-top:4px">--isac-ink-muted · #52707A · 5,2:1 no branco</div>
+        </div>
+        <div class="card" style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:20px;height:20px;border-radius:6px;background:#3F7A55;flex:none"></span><span style="font-size:16px"><strong style="font-weight:600">Sucesso</strong> · #3F7A55</span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:20px;height:20px;border-radius:6px;background:#9A5B15;flex:none"></span><span style="font-size:16px"><strong style="font-weight:600">Atenção</strong> · #9A5B15</span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:20px;height:20px;border-radius:6px;background:#B4462F;flex:none"></span><span style="font-size:16px"><strong style="font-weight:600">Erro</strong> · #B4462F</span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:20px;height:20px;border-radius:6px;background:#3D6A76;flex:none"></span><span style="font-size:16px"><strong style="font-weight:600">Informação</strong> · #3D6A76</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Foco de teclado</div>
+          <p class="card-body">Anel de 3px em petróleo escuro com 2px de folga. Igual em todos os controles.</p>
+          <button class="btn btn-primary btn-sm" style="margin-top:14px;outline:3px solid var(--isac-primary-dark);outline-offset:2px">Botão com foco</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACESSIBILIDADE ===================== -->
+    <section class="reveal">
+      <div class="eyebrow">02 · Acessibilidade</div>
+      <h2 class="h-section">Auditoria de contraste</h2>
+      <p class="lead muted mt-10" style="max-width:60ch">Todas as combinações usadas no produto foram medidas. Duas combinações da paleta original <strong style="color:var(--isac-ink)">não passam</strong> e por isso ficam proibidas no sistema.</p>
+      <div class="audit mt-20">
+        <div class="audit-row audit-head"><div>Combinação</div><div style="text-align:right">Razão</div><div style="text-align:right">Status</div></div>
+        <div class="audit-row"><div style="font-size:16px">Tinta #1F3A42 sobre areia #FAFAF2 — texto corrido</div><div class="tabnum" style="text-align:right;font-weight:600">11,6:1</div><div style="text-align:right"><span class="status-aa">AAA</span></div></div>
+        <div class="audit-row"><div style="font-size:16px">Tinta #1F3A42 sobre creme #F0F2C8 — blocos da IA</div><div class="tabnum" style="text-align:right;font-weight:600">10,5:1</div><div style="text-align:right"><span class="status-aa">AAA</span></div></div>
+        <div class="audit-row"><div style="font-size:16px">Tinta #1F3A42 sobre oliva #B5C24E — botão primário</div><div class="tabnum" style="text-align:right;font-weight:600">6,28:1</div><div style="text-align:right"><span class="status-aa">AA</span></div></div>
+        <div class="audit-row"><div style="font-size:16px">Tinta #1F3A42 sobre coral #E8946A — etiquetas</div><div class="tabnum" style="text-align:right;font-weight:600">5,13:1</div><div style="text-align:right"><span class="status-aa">AA</span></div></div>
+        <div class="audit-row"><div style="font-size:16px">Branco sobre petróleo #4A7C8A — barra de navegação</div><div class="tabnum" style="text-align:right;font-weight:600">4,69:1</div><div style="text-align:right"><span class="status-aa">AA</span></div></div>
+        <div class="audit-row" style="background:#FDF1ED"><div style="font-size:16px">Branco sobre oliva #B5C24E — <strong>proibido</strong></div><div class="tabnum" style="text-align:right;font-weight:600">1,68:1</div><div style="text-align:right"><span class="status-fail">Reprovado</span></div></div>
+        <div class="audit-row" style="background:#FDF1ED"><div style="font-size:16px">Branco sobre coral #E8946A — <strong>proibido</strong></div><div class="tabnum" style="text-align:right;font-weight:600">1,94:1</div><div style="text-align:right"><span class="status-fail">Reprovado</span></div></div>
+      </div>
+    </section>
+
+    <!-- ===================== TIPOGRAFIA ===================== -->
+    <section class="reveal">
+      <div class="eyebrow">03 · Tipografia</div>
+      <h2 class="h-section">Duas fontes, papéis fixos</h2>
+      <p class="lead muted mt-10" style="max-width:60ch">Outfit nos títulos, Source Sans 3 no texto e nos controles. Escala grande por padrão — o menor tamanho de leitura é 16px.</p>
+      <div class="grid g-300 mt-20 reveal-stagger">
+        <div class="card">
+          <div class="label-kicker" style="margin-bottom:14px">Outfit · títulos</div>
+          <div class="h-display">Anúncio</div>
+          <div class="h-section" style="margin-top:8px">Publicar no bairro</div>
+          <div class="h-sub" style="margin-top:8px">Categoria e preço</div>
+        </div>
+        <div class="card">
+          <div class="label-kicker" style="margin-bottom:14px">Source Sans 3 · leitura</div>
+          <p style="font-size:19px;line-height:1.6">Corpo grande — 19px em telas de detalhe.</p>
+          <p style="font-size:17px;line-height:1.6;margin-top:10px">Corpo padrão — 17px na maioria das telas.</p>
+          <p style="font-size:15px;line-height:1.5;margin-top:10px;color:var(--isac-ink-muted)">Apoio — 15px, só para dicas e legendas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ESPAÇAMENTO / GRADE ===================== -->
+    <section class="reveal">
+      <div class="eyebrow">04 · Espaço &amp; grade</div>
+      <h2 class="h-section">Ritmo de 4 pixels</h2>
+      <p class="lead muted mt-10" style="max-width:60ch">Tudo é múltiplo de 4. Uma grade fluida no celular vira 12 colunas no desktop, com contêiner de 1120px.</p>
+
+      <div class="grid g-300 mt-20 reveal-stagger">
+        <div class="card">
+          <div class="card-title">Mobile · 360–767px</div>
+          <p style="font-size:16px;line-height:1.5;margin-top:6px">1 coluna · gutter 16 · cards empilhados</p>
+          <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-top:14px"><div style="height:40px;background:var(--isac-surface-alt);border-radius:8px"></div><div style="height:40px;background:var(--isac-surface-alt);border-radius:8px"></div></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Desktop · 1024px+</div>
+          <p style="font-size:16px;line-height:1.5;margin-top:6px">12 colunas · gutter 24 · contêiner 1120 · grade de 3 cards</p>
+          <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:4px;margin-top:14px">
+            <div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div><div style="height:56px;background:var(--isac-surface-alt);border-radius:4px"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid g-260 mt-16 reveal-stagger">
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Escala de espaçamento</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:4px"></div><span style="font-size:15px">4 · dentro de etiquetas</span></div>
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:8px"></div><span style="font-size:15px">8 · rótulo e campo</span></div>
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:12px"></div><span style="font-size:15px">12 · linhas de um card</span></div>
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:16px"></div><span style="font-size:15px">16 · padding de card, gutter mobile</span></div>
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:24px"></div><span style="font-size:15px">24 · entre cards</span></div>
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:32px"></div><span style="font-size:15px">32 · entre blocos</span></div>
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:48px"></div><span style="font-size:15px">48 · entre seções</span></div>
+            <div class="sp-row" style="display:flex;align-items:center;gap:12px"><div class="sp-bar" style="width:64px"></div><span style="font-size:15px">64 · topo/rodapé de tela</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" style="margin-bottom:14px">Cantos &amp; elevação</div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <div style="width:84px"><div style="height:60px;background:var(--isac-surface-alt);border-radius:10px"></div><div style="font-size:14px;color:var(--isac-ink-muted);margin-top:6px">10 · campo</div></div>
+            <div style="width:84px"><div style="height:60px;background:var(--isac-surface-alt);border-radius:12px"></div><div style="font-size:14px;color:var(--isac-ink-muted);margin-top:6px">12 · botão</div></div>
+            <div style="width:84px"><div style="height:60px;background:var(--isac-surface-alt);border-radius:18px"></div><div style="font-size:14px;color:var(--isac-ink-muted);margin-top:6px">18 · card</div></div>
+            <div style="width:84px"><div style="height:60px;background:var(--isac-surface-alt);border-radius:999px"></div><div style="font-size:14px;color:var(--isac-ink-muted);margin-top:6px">999 · chip</div></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:22px">
+            <div style="flex:1 1 120px"><div style="height:60px;background:#fff;border:1px solid var(--isac-border);border-radius:14px"></div><div style="font-size:14px;color:var(--isac-ink-muted);margin-top:6px">Nível 0 · borda sálvia</div></div>
+            <div style="flex:1 1 120px"><div style="height:60px;background:#fff;border-radius:14px;box-shadow:var(--sh-1)"></div><div style="font-size:14px;color:var(--isac-ink-muted);margin-top:6px">Nível 1 · card</div></div>
+            <div style="flex:1 1 120px"><div style="height:60px;background:#fff;border-radius:14px;box-shadow:var(--sh-2)"></div><div style="font-size:14px;color:var(--isac-ink-muted);margin-top:6px">Nível 2 · modal, barra fixa</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPONENTES ===================== -->
+    <section class="reveal">
+      <div class="eyebrow">05 · Componentes</div>
+      <h2 class="h-section">Biblioteca base</h2>
+      <p class="lead muted mt-10" style="max-width:60ch">Altura mínima de toque 48px em tudo que é clicável. Cada componente tem um único desenho — repetido igual em todas as telas.</p>
+
+      <h3 class="h-sub mt-32">Botões</h3>
+      <div class="card" style="padding:clamp(18px,3vw,26px);margin-top:14px;display:flex;flex-direction:column;gap:22px">
+        <div>
+          <div class="label-kicker" style="margin-bottom:12px">Variantes</div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+            <button class="btn btn-primary">Publicar anúncio</button>
+            <button class="btn btn-secondary">Ver detalhes</button>
+            <button class="btn btn-ghost">Agora não</button>
+            <button class="btn btn-accent">Falar no WhatsApp</button>
+            <button class="btn btn-disabled" disabled>Desabilitado</button>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--isac-border-soft);padding-top:20px">
+          <div class="label-kicker" style="margin-bottom:12px">Tamanhos &amp; estados</div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+            <button class="btn btn-primary btn-lg">Grande 56 · ação principal</button>
+            <button class="btn btn-primary">Médio 48</button>
+            <button class="btn btn-primary btn-sm">Pequeno 40</button>
+            <button class="btn btn-primary btn-pressed">Pressionado</button>
+            <button class="btn btn-primary"><span class="spinner"></span>Organizando…</button>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="h-sub mt-32">Campos</h3>
+      <div class="grid g-280 mt-14 reveal-stagger">
+        <div class="field-card">
+          <div class="field">
+            <label>Seu nome</label>
+            <input class="input" value="Maria das Graças">
+            <div class="hint">Como os vizinhos vão te ver.</div>
+          </div>
+          <div class="field">
+            <label>Celular com WhatsApp</label>
+            <input class="input is-focus" value="(81) 9">
+            <div class="hint">Em foco. Máscara automática: (81) 9 0000-0000</div>
+          </div>
+          <div class="field">
+            <label>Preço</label>
+            <input class="input is-error" value="R$">
+            <div class="hint-error"><span class="badge-x">!</span><span>Escreva um valor, ex.: 35. Ou marque “a combinar”.</span></div>
+          </div>
+        </div>
+        <div class="field-card">
+          <div class="field">
+            <label>Cole a mensagem do WhatsApp</label>
+            <div class="input" style="min-height:112px;color:var(--isac-ink-muted);line-height:1.5">Gente vendo bolo de rolo caseiro 35 reais entrego no setor 4 chama no zap…</div>
+            <div style="display:flex;justify-content:space-between;gap:12px;margin-top:6px"><span class="hint">Pode colar do jeito que está.</span><span class="hint tabnum">78/600</span></div>
+          </div>
+          <div class="field">
+            <label>Categoria</label>
+            <div class="input" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">Alimentação<span style="color:var(--isac-ink-muted);font-size:14px">▾</span></div>
+          </div>
+          <div class="field">
+            <div class="field-label">Busca</div>
+            <div class="input" style="display:flex;align-items:center;gap:10px;border-radius:999px;cursor:text"><span style="font-size:18px;color:var(--isac-ink-muted)">⌕</span><span style="color:var(--isac-ink-muted)">Buscar no bairro…</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="h-sub mt-32">Etiquetas &amp; chips</h3>
+      <div class="card mt-14" style="display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          <span class="tag" style="background:#E8946A">Novo hoje</span>
+          <span class="tag" style="background:#F0F2C8">Alimentação</span>
+          <span class="tag" style="background:#D4DCC8">Serviço</span>
+          <span class="tag" style="background:#E2EFE6;color:#2C5F42">✓ Vizinho verificado</span>
+          <span class="tag" style="background:#EEF4F5;color:#3D6A76">Organizado pela IA</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-top:1px solid var(--isac-border-soft);padding-top:18px">
+          <span class="pill pill-active">Tudo</span>
+          <span class="pill pill-idle">Comida</span>
+          <span class="pill pill-idle">Serviços</span>
+          <span class="pill pill-idle">Imóveis</span>
+          <span class="pill pill-idle">Vagas</span>
+        </div>
+      </div>
+
+      <h3 class="h-sub mt-32">Cards</h3>
+      <div class="grid g-260 mt-14 reveal-stagger">
+        <div class="listing">
+          <div class="listing-photo">foto do anúncio<span class="tag badge-abs" style="background:#E8946A">Novo hoje</span></div>
+          <div style="padding:16px;display:flex;flex-direction:column;gap:12px">
+            <div>
+              <div style="font-family:var(--font-display);font-size:18px;font-weight:600;line-height:1.3">Bolo de rolo caseiro</div>
+              <div style="font-size:15px;color:var(--isac-ink-muted);margin-top:4px">Alimentação · Setor IV</div>
+            </div>
+            <div style="font-family:var(--font-display);font-size:22px;font-weight:600;color:var(--isac-primary-dark)">R$ 35</div>
+            <div style="display:flex;align-items:center;gap:8px;border-top:1px solid var(--isac-border-soft);padding-top:12px">
+              <span class="avatar">MG</span><span style="font-size:15px;color:var(--isac-ink-muted)">Maria das Graças · há 2h</span>
+            </div>
+          </div>
+        </div>
+        <div class="card hover-lift" style="background:#F0F2C8;border-color:#E6E9B4;display:flex;flex-direction:column;gap:10px;padding:22px">
+          <div style="width:44px;height:44px;border-radius:14px;background:#4A7C8A;display:grid;place-items:center;color:#fff;font-size:20px">⌂</div>
+          <div style="font-family:var(--font-display);font-size:18px;font-weight:600">Imóveis</div>
+          <div style="font-size:15px;color:var(--isac-primary-dark)">28 anúncios no bairro</div>
+        </div>
+        <div class="card" style="border:1.5px dashed #B9C6AE;display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding:22px">
+          <div class="label-kicker">Estado vazio</div>
+          <div style="font-family:var(--font-display);font-size:18px;font-weight:600;line-height:1.3">Nenhum anúncio de vagas por aqui ainda</div>
+          <p style="font-size:16px;color:var(--isac-ink-muted);line-height:1.5">Que tal ser o primeiro? Leva menos de um minuto.</p>
+          <button class="btn btn-primary btn-sm">Publicar anúncio</button>
+        </div>
+      </div>
+
+      <h3 class="h-sub mt-32">Navegação</h3>
+      <div class="grid g-300 mt-14 reveal-stagger">
+        <div class="card" style="padding:0;overflow:hidden">
+          <div class="nav-top">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div style="width:34px;height:34px;border-radius:11px;background:#B5C24E;display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:14px;color:#1F3A42">IC</div>
+              <span style="font-family:var(--font-display);font-size:18px;font-weight:600;color:#fff">ISAC Conecta</span>
+            </div>
+            <span style="width:40px;height:40px;border-radius:999px;background:rgba(255,255,255,.18);display:grid;place-items:center;color:#fff;font-size:15px;font-weight:700">MG</span>
+          </div>
+          <div style="padding:16px 18px;font-size:15px;color:var(--isac-ink-muted)">Barra de topo · marca à esquerda, conta à direita</div>
+        </div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <div style="padding:16px 18px;font-size:15px;color:var(--isac-ink-muted)">Barra inferior · 4 destinos + ação central, sempre visível no celular</div>
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);background:#fff;border-top:1px solid var(--isac-border-soft);padding:8px 6px 10px">
+            <div class="nav-item" style="color:#3D6A76"><span style="font-size:20px">⌂</span><span style="font-size:13px;font-weight:700">Início</span></div>
+            <div class="nav-item" style="color:#52707A"><span style="font-size:20px">⌕</span><span style="font-size:13px;font-weight:600">Buscar</span></div>
+            <div class="nav-item"><span class="nav-fab">+</span></div>
+            <div class="nav-item" style="color:#52707A"><span style="font-size:20px">☰</span><span style="font-size:13px;font-weight:600">Meus</span></div>
+            <div class="nav-item" style="color:#52707A"><span style="font-size:20px">☺</span><span style="font-size:13px;font-weight:600">Conta</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="h-sub mt-32">Feedback do sistema</h3>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:14px" class="reveal-stagger">
+        <div class="feedback" style="background:#EEF4F5;border:1px solid #C4D9DE">
+          <span class="fb-icon" style="background:#3D6A76">i</span>
+          <div><div style="font-size:17px;font-weight:600">Estamos organizando sua mensagem</div><p style="font-size:16px;color:#3D6A76;line-height:1.5;margin-top:2px">Você vai poder conferir e corrigir tudo antes de publicar.</p></div>
+        </div>
+        <div class="feedback" style="background:#E2EFE6;border:1px solid #B6D6C2;align-items:center;justify-content:space-between;flex-wrap:wrap">
+          <div style="display:flex;gap:12px;align-items:center"><span class="fb-icon" style="background:#3F7A55">✓</span><span style="font-size:17px;font-weight:600">Anúncio publicado no bairro</span></div>
+          <button class="btn btn-secondary btn-sm" style="border-color:#3F7A55;color:#1F3A42">Desfazer</button>
+        </div>
+        <div class="feedback" style="background:#FDF1ED;border:1px solid #EBB9AA">
+          <span class="fb-icon" style="background:#B4462F">!</span>
+          <div><div style="font-size:17px;font-weight:600">Não conseguimos entender a mensagem</div><p style="font-size:16px;color:#8A4030;line-height:1.5;margin-top:2px">Cole novamente ou preencha os campos você mesmo — a gente ajuda.</p></div>
+        </div>
+        <div class="card" style="display:flex;flex-direction:column;gap:10px;padding:18px">
+          <div class="label-kicker">Carregando · esqueleto</div>
+          <div class="skeleton-line" style="width:60%"></div>
+          <div class="skeleton-line" style="width:85%"></div>
+          <div class="skeleton-line" style="width:40%"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span style="font-size:16px">ISAC Conecta · Design System 2.0</span>
+      <span style="font-size:16px">Instituto Social e Ambiental do Cabo · Enseada dos Corais</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+// scroll reveal
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal,.reveal-stagger').forEach(el=>io.observe(el));
+// barra de progresso de leitura
+const bar=document.getElementById('readingBar');
+const onScroll=()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight);bar.style.width=(p*100)+'%'};
+document.addEventListener('scroll',onScroll,{passive:true});onScroll();
+</script>
+</body>
+</html>
