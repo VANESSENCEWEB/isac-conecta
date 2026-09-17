@@ -180,14 +180,14 @@ Organização por **frentes**, em ondas. Os nomes servem para orientar — dá p
 
 | Frente | Responsável | Descrição |
 |--------|-------------|-----------|
-| 🎨 Design / Figma | `@____` | Desenhar as telas: Vitrine, Detalhe, Publicar, Login |
-| 🗄️ Banco de dados | `@____` | Modelar tabelas: usuários, anúncios, categorias |
+| 🎨 Design / Figma | `@VANESSENCEWEB, @____` | Desenhar as telas: Vitrine, Detalhe, Publicar, Login |
+| 🗄️ Banco de dados | `@____, @____` | Modelar tabelas: usuários, anúncios, categorias |
 
 ### 🌊 Onda 2 — Entra quando o Figma e o banco estiverem prontos
 
 | Frente | Responsável | Descrição |
 |--------|-------------|-----------|
-| 🤖 Motor de IA | `@____` | Prompt que transforma mensagem bruta em anúncio estruturado |
+| 🤖 Motor de IA | `@____, @____` | Prompt que transforma mensagem bruta em anúncio estruturado |
 | 💻 Front — Vitrine + Detalhe | `@____` | Tela principal com lista, busca e filtro |
 | 📝 Front — Publicar + Login | `@____` | Tela de colar a mensagem + criar conta/entrar |
 | 🔗 Integração | `@____` | Junta front + IA + banco |
@@ -197,7 +197,7 @@ Organização por **frentes**, em ondas. Os nomes servem para orientar — dá p
 | Frente | Responsável | Descrição |
 |--------|-------------|-----------|
 | ✨ Área do comércio + Painel ISAC | `@____` | Perfil pago, destaque e barra de arrecadação |
-| 📋 Documentação + Apresentação | `@VANESSENCEWEB` | Escopo, Business Model Canvas e apresentação final |
+| 📋 Documentação + Apresentação + Entrega = GRUPO | Escopo, Business Model Canvas e apresentação final |
 
 ---
 
@@ -256,7 +256,6 @@ Associação civil sem fins econômicos, fundada em julho de 2023, mantida por d
 
 Projeto desenvolvido pelo grupo da Residência em Software & IA — GrowUp / Porto Digital.
 
-**Coordenação e desenvolvimento:** [@VANESSENCEWEB](https://github.com/VANESSENCEWEB) (Vanessa Lima)
 
 <div align="center">
 
