@@ -1,0 +1,168 @@
+/* ============================================================
+   ISAC CONECTA — tokens.css
+   Design System v2.0 "Praia, mata e vizinhança"
+   Fonte única: Inter · Base 4px · WCAG AA
+   Ponte oficial Figma → código. Componente nunca usa hex/px cru:
+   usa SEMPRE var(--...) daqui.
+   ============================================================ */
+
+:root {
+  /* ---------------------------------------------------------
+     CAMADA 1 — PRIMITIVES (cor crua, não usar direto)
+     --------------------------------------------------------- */
+  --petroleo:         #4A7C8A;
+  --petroleo-medio:   #52707A;   /* texto AA sobre branco (4.8:1) */
+  --petroleo-escuro:  #3D6A76;   /* hover, info, anel de foco */
+  --petroleo-tinta:   #1F3A42;   /* texto principal (14.3:1 sobre areia) */
+  --oliva:            #B5C24E;
+  --oliva-profundo:   #6E7826;
+  --coral:            #E8946A;
+  --areia:            #FAFAF2;
+  --branco:           #FFFFFF;
+  --creme:            #F0F2C8;
+  --salvia:           #D4DCC8;
+  --sucesso:          #3F7A55;
+  --atencao:          #9A5B15;
+  --erro:             #B4462F;
+  --info:             #3D6A76;
+
+  /* ---------------------------------------------------------
+     CAMADA 2 — SEMANTIC (isto o componente usa)
+     --------------------------------------------------------- */
+
+  /* Marca & estrutura */
+  --color-primary:       var(--petroleo);        /* barra superior, branding, nav */
+  --color-primary-hover: var(--petroleo-escuro); /* hover de links/nav */
+  --color-primary-ink:   var(--petroleo-tinta);  /* texto principal */
+
+  /* Ação & destaque */
+  --color-accent:        var(--oliva);           /* ação principal: botões, ativos */
+  --color-accent-strong: var(--oliva-profundo);  /* oliva como TEXTO em fundo claro / hover */
+  --color-highlight:     var(--coral);           /* selos, avisos de atenção */
+
+  /* Superfícies */
+  --color-bg:            var(--areia);            /* fundo geral */
+  --color-surface:       var(--branco);           /* cards, modais, formulários */
+  --color-surface-warm:  var(--creme);            /* destaque neutro, item de select selecionado */
+  --color-surface-alt:   var(--salvia);           /* bordas, divisores, chips off, ghost hover */
+  --color-border:        var(--salvia);
+
+  /* Texto */
+  --color-text:          var(--petroleo-tinta);   /* corpo e títulos (AAA sobre areia) */
+  --color-text-muted:    var(--petroleo-medio);   /* texto secundário (AA 4.8:1 sobre branco) */
+  --color-text-inverse:  var(--branco);           /* texto sobre superfícies escuras */
+
+  /* Texto SOBRE cores de ação — regra de contraste embutida.
+     Oliva (3.1:1) e Coral (3.0:1) só passam AA em texto GRANDE:
+     texto sobre eles é sempre o tinta escuro, nunca branco. */
+  --color-on-accent:     var(--petroleo-tinta);
+  --color-on-primary:    var(--branco);           /* branco no petróleo só em texto grande/semibold */
+
+  /* Estados & sinalização */
+  --color-success:       var(--sucesso);
+  --color-warning:       var(--atencao);
+  --color-danger:        var(--erro);
+  --color-info:          var(--info);
+
+  /* Foco de teclado — conforme sheet 06 (WCAG AA): 3px Petróleo Escuro, recuo 2px */
+  --focus-ring:          var(--petroleo-escuro);
+  --focus-ring-width:    3px;
+  --focus-ring-offset:   2px;
+
+  /* ---------------------------------------------------------
+     ESPAÇAMENTO — múltiplos de 4px
+     --------------------------------------------------------- */
+  --sp-xs:   4px;  --sp-sm:  8px;  --sp-md: 12px;  --sp-base:16px;
+  --sp-lg:  24px;  --sp-xl: 32px;  --sp-2xl:48px;  --sp-3xl: 64px;  --sp-4xl:80px;
+
+  /* ---------------------------------------------------------
+     RAIO DE BORDA — "cantos suaves"
+     --------------------------------------------------------- */
+  --raio-suave:      4px;    /* inputs, checkboxes */
+  --raio-padrao:     8px;    /* botões, chips, badges */
+  --raio-elevado:   12px;    /* cards estruturais, modais médios */
+  --raio-estrutural:16px;    /* seções globais, cards de imagem, popovers */
+  --raio-full:    9999px;    /* selos com contador, botões circulares */
+
+  /* ---------------------------------------------------------
+     TIPOGRAFIA — Inter
+     --------------------------------------------------------- */
+  --fonte: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --fw-regular:400; --fw-semibold:600; --fw-bold:700; --fw-extrabold:800;
+
+  --fs-display: 36px;  --lh-display: 44px;  /* 800 */
+  --fs-h1:      28px;  --lh-h1:      36px;  /* 700 */
+  --fs-h2:      24px;  --lh-h2:      32px;  /* 700 */
+  --fs-h3:      20px;  --lh-h3:      28px;  /* 600 */
+  --fs-body-strong:16px; --lh-body-strong:22px; /* 600 */
+  --fs-body:    16px;  --lh-body:    24px;  /* 400 */
+  --fs-small:   14px;  --lh-small:   20px;  /* 400 */
+  --fs-overline:13px;  --lh-overline:18px;  /* 600, uppercase */
+
+  /* ---------------------------------------------------------
+     COMPONENTES — tamanhos vindos dos sheets 03/04/05
+     --------------------------------------------------------- */
+  /* Botão: tamanho do rótulo por variante de tamanho */
+  --fs-btn-lg: 16px;   /* Large  */
+  --fs-btn-md: 14px;   /* Medium */
+  --fs-btn-sm: 12px;   /* Small  */
+
+  /* Campo (input/select/textarea): altura por tamanho */
+  --altura-input-md: 44px;   /* padrão — também é o alvo de toque mínimo */
+  --altura-input-sm: 36px;   /* compacto (ex.: busca rápida) */
+
+  /* Avatares do usuário */
+  --avatar-xs:24px; --avatar-sm:32px; --avatar-md:40px; --avatar-lg:56px; --avatar-xl:80px;
+
+  /* ---------------------------------------------------------
+     ELEVAÇÃO / toque
+     --------------------------------------------------------- */
+  --elev-1: 0 1px 2px rgba(31,58,66,.06), 0 1px 3px rgba(31,58,66,.08);
+  --elev-2: 0 4px 12px rgba(31,58,66,.10);
+  --toque-min: 44px;
+
+  /* ---------------------------------------------------------
+     ALIASES curtos (compatíveis com convencoes-do-projeto)
+     --------------------------------------------------------- */
+  --primary: var(--color-primary);
+  --accent:  var(--color-accent);
+  --ink:     var(--color-text);
+  --page-bg: var(--color-bg);
+}
+
+/* ============================================================
+   BREAKPOINTS (referência — media query não aceita var())
+   mobile 320–767 (4col/16/16) · tablet 768–1023 (8col/24/20)
+   desktop 1024–1440 (12col/32/24) · wide 1441+ (12col/auto/24)
+   Container máx. 1200px no desktop. MOBILE-FIRST: base = 320px.
+   ============================================================ */
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Anel de foco padrão (3px Petróleo Escuro, recuo 2px) */
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* ============================================================
+   CLASSES DE TEXTO prontas
+   ============================================================ */
+.txt-display     { font-size: var(--fs-display);     line-height: var(--lh-display);     font-weight: var(--fw-extrabold); }
+.txt-h1          { font-size: var(--fs-h1);          line-height: var(--lh-h1);          font-weight: var(--fw-bold); }
+.txt-h2          { font-size: var(--fs-h2);          line-height: var(--lh-h2);          font-weight: var(--fw-bold); }
+.txt-h3          { font-size: var(--fs-h3);          line-height: var(--lh-h3);          font-weight: var(--fw-semibold); }
+.txt-body-strong { font-size: var(--fs-body-strong); line-height: var(--lh-body-strong); font-weight: var(--fw-semibold); }
+.txt-body        { font-size: var(--fs-body);        line-height: var(--lh-body);        font-weight: var(--fw-regular); }
+.txt-small       { font-size: var(--fs-small);       line-height: var(--lh-small);       font-weight: var(--fw-regular); }
+.txt-overline    { font-size: var(--fs-overline);    line-height: var(--lh-overline);    font-weight: var(--fw-semibold);
+                   text-transform: uppercase; letter-spacing: .04em; }
