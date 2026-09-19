@@ -1,16 +1,33 @@
-# ISAC Conecta — Definição do Problema, Personas e Validação
+<div align="center">
 
-**Projeto:** ISAC Conecta — plataforma que organiza a economia do bairro com IA
-**Instituição parceira:** ISAC — Instituto Social e Ambiental do Cabo (Enseada dos Corais, Cabo de Santo Agostinho/PE)
-**Contexto:** Projeto Integrador — Residência em Software e IA (GrowUp / Porto Digital)
-**Equipe:** Vanessa Rafaella (coordenação) e equipe — _[preencher nomes]_
-**Versão:** 1.1 · **Data:** 19/09/2026 · **Status:** em desenvolvimento (Fase 1)
+# 🌊 ISAC Conecta
+### Definição do Problema, Personas e Validação
+*Plataforma que organiza a economia do bairro com IA*
+
+![Status](https://img.shields.io/badge/status-em_desenvolvimento-F5B301?style=flat-square)
+![Fase](https://img.shields.io/badge/fase-1-4A7C8A?style=flat-square)
+![Versão](https://img.shields.io/badge/versão-1.1-6E7826?style=flat-square)
+![WCAG](https://img.shields.io/badge/WCAG-AA-3F7A55?style=flat-square)
+
+</div>
+
+---
+
+|  |  |
+|---|---|
+| 🏛️ **Instituição** | ISAC — Instituto Social e Ambiental do Cabo |
+| 📍 **Local** | Enseada dos Corais · Cabo de Santo Agostinho / PE |
+| 🎓 **Contexto** | Projeto Integrador — Residência em Software e IA (GrowUp / Porto Digital) |
+| 👥 **Equipe** | · Demetrius [@Demetrius581](https://github.com/Demetrius581) <br> · James [@jamessilva-unicap](https://github.com/jamessilva-unicap) <br> · Joao Victor [@joao-vitor-queiroz](https://github.com/joao-vitor-queiroz)<br> · Kaio Gabriel [@kaiogabrielpe](https://github.com/kaiogabrielpe)<br> · Luan [@luanzin17-in](https://github.com/luanzin17-in)<br> · Suedson Junior [@suedsonjunior](https://github.com/suedsonjunior)<br> · Vanessa [@vanessenceweb](https://github.com/vanessenceweb) |
+| 📅 **Data** | 19/09/2026 |
+
+
 
 ---
 
 ## 1. Descrição do problema, solução e oportunidade de IA
 
-### 1.1 Problema _(224 caracteres)_
+### 1.1 Problema 
 Nos grupos de WhatsApp do bairro, os anúncios de produtos, serviços e vagas se perdem no fluxo de mensagens: sem busca, filtro ou organização, boas ofertas somem em minutos. Quem procura não encontra; quem oferece não vende.
 
 ### 1.2 Solução
