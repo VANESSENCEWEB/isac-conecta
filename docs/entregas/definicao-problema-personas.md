@@ -4,7 +4,7 @@
 **Instituição parceira:** ISAC — Instituto Social e Ambiental do Cabo (Enseada dos Corais, Cabo de Santo Agostinho/PE)
 **Contexto:** Projeto Integrador — Residência em Software e IA (GrowUp / Porto Digital)
 **Equipe:** Vanessa Rafaella (coordenação) e equipe — _[preencher nomes]_
-**Versão:** 1.0 · **Data:** 19/09/2026 · **Status:** em desenvolvimento (Fase 1)
+**Versão:** 1.1 · **Data:** 19/09/2026 · **Status:** em desenvolvimento (Fase 1)
 
 ---
 
@@ -65,21 +65,36 @@ Precisa de uma fonte de receita recorrente para sustentar seus programas. **Dor:
 
 ---
 
-## 3. Entrevistas e validação de hipóteses
+## 3. Confiança e verificação
 
-### 3.1 Hipóteses a validar
+Confiança é o requisito crítico do produto: sem ela, ninguém publica nem compra. A credibilidade é construída em camadas.
+
+- **Autoria — quem publica é a pessoa logada.** O sistema **não** pega texto de qualquer um no grupo: o próprio morador entra na plataforma (cadastro/login) e cola a mensagem dele. Todo anúncio fica amarrado a uma conta real (`autor_id`). **Nada anônimo entra na vitrine.**
+- **Verificação de telefone → selo "Verificado".** Como o contato é via WhatsApp, a plataforma envia um **código para o número** e a pessoa confirma. Só então o número recebe o selo — que passa a significar algo real: aquele contato existe e é do anunciante. _(MVP: confirmação simples; verificação por código/OTP completa se houver tempo.)_
+- **Limiar de confiança + moderação.** Anúncio ambíguo, suspeito ou que a IA não entendeu bem entra como **"pendente"** e não vai direto ao ar.
+- **Contato direto com o anunciante verificado.** O botão de contato leva ao WhatsApp de quem realmente publicou — a conversa acontece com o dono do anúncio.
+- **Selo de comércio parceiro (chancela do ISAC).** O Instituto pode validar comércios locais, emprestando a credibilidade institucional a quem é parceiro.
+- **Reputação e avaliações (Nível 3, futuro).** Histórico e notas de quem já negociou.
+
+**Sobre a leitura automática do grupo:** fica para o **Nível 3**. E, mesmo lá, a IA apenas cria um **rascunho pendente** — que só vai ao ar quando o dono **reivindica e confirma** ("esse anúncio é meu"). O sistema nunca publica em nome de alguém sem essa confirmação.
+
+---
+
+## 4. Entrevistas e validação de hipóteses
+
+### 4.1 Hipóteses a validar
 - **H1 — Dor real:** moradores perdem oportunidades por causa da desorganização dos grupos.
 - **H2 — Adoção:** as pessoas topariam publicar "do jeito que já fazem" se isso virasse algo organizado e pesquisável.
 - **H3 — Sustentabilidade:** comércios locais pagariam por destaque/alcance.
 
-### 3.2 Roteiro de entrevista (foco em pontos de dor)
+### 4.2 Roteiro de entrevista (foco em pontos de dor)
 1. Como você anuncia ou procura coisas no bairro hoje?
 2. Já perdeu uma venda ou uma oportunidade porque o anúncio "se perdeu" no grupo?
 3. O que é mais chato nesse processo hoje?
 4. Se pudesse colar a mesma mensagem e ela virasse um anúncio organizado e pesquisável, usaria? Por quê?
 5. (Comércio) Pagaria por destaque para aparecer a quem está procurando? Quanto faria sentido?
 
-### 3.3 Relatório — entrevista com humanos
+### 4.3 Relatório — entrevista com humanos
 > **A preencher após as entrevistas.** Meta: pelo menos **1 entrevista com humano** para validação do problema.
 >
 > - Entrevistado(a): _[nome / perfil]_
@@ -88,7 +103,7 @@ Precisa de uma fonte de receita recorrente para sustentar seus programas. **Dor:
 > - Hipóteses confirmadas/refutadas: _[preencher]_
 > - Aprendizados e ajustes no produto: _[preencher]_
 
-### 3.4 Relatório — entrevista com agentes inteligentes
+### 4.4 Relatório — entrevista com agentes inteligentes
 > **A preencher.** Simulação de entrevista com uma IA assumindo o papel de uma persona (ex.: "Dona Maria"), para antecipar pontos de dor e testar o roteiro antes de ir a campo.
 >
 > - Persona simulada: _[preencher]_
@@ -97,7 +112,7 @@ Precisa de uma fonte de receita recorrente para sustentar seus programas. **Dor:
 
 ---
 
-## 4. Status atual do projeto (para acompanhamento)
+## 5. Status atual do projeto (para acompanhamento)
 
 - ✅ **Design System v2.0** "Praia, mata e vizinhança" (Inter, base 4px, WCAG AA) — proposta pronta.
 - ✅ **Repositório organizado** com documentação, arquitetura, agentes e skills de desenvolvimento.
